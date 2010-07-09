@@ -47,6 +47,7 @@
                     storageAdapter: {
                         nameSpace: 'storageAdapter_cohorts',
                         trackEvent: function(category, action, opt_label, opt_value) {
+                            console.log(category, action, opt_label, opt_value);
                             if(window['_gaq']) {
                                 _gaq.push(['_trackEvent', category, action, opt_label, opt_value]);
                             } else {
